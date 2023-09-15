@@ -36,4 +36,25 @@ def customers(request):
         return JsonResponse(json.loads(data), safe=False)
         
 
+def one_customer(request, customer_id):
+    
+    try:
 
+        # Use get_object_or_404 to retrieve the book or return 404 if not found
+
+        customer = get_object_or_404(Customer, pk=customer_id)
+      
+        # Customize the data you want to return in the JSON response
+
+        data = {
+
+            'cust_name': customer.cust_name
+        }
+
+    except:
+
+        print("Error: Customer not found")
+
+    else:
+           
+        return JsonResponse(data)
