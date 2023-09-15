@@ -36,7 +36,7 @@ def customers(request):
         return JsonResponse(json.loads(data), safe=False)
         
 
-def one_customer(request, customer_id):
+def sign_in(request, customer_id):
     
     try:
 
