@@ -58,3 +58,20 @@ def sign_in(request, customer_id):
     else:
            
         return JsonResponse(data)
+    
+@csrf_exempt ## To exempt from default requirement for CSRF tokens to use postman
+def sign_up(request):
+    
+    try:
+
+        new = Customer(cust_name="Abby", password="12345678")
+
+        new.save()
+
+    except:
+
+        print("Customer not created")
+
+    else:
+           
+        return HttpResponse("Customer successfully created")
