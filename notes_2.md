@@ -1,6 +1,8 @@
 from . models import Customer 
 
-# Create your views here.
+# Serializing data in Django
+
+It's basically coverting your response data into a more usable format like json or xml
 
 
 # a high level way to serialize data in django
