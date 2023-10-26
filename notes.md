@@ -1,3 +1,19 @@
+#### Resources
+
+Users
+
+Payment Information
+
+### CRUD
+
+Create user accounts (sign up)
+
+Read - Log in to your account (sign in) ; see your payment information; 
+
+Update
+
+Delete
+
 #### Work with private APIs...
 
 Protected routes for authorized users...access and permissions
@@ -8,13 +24,17 @@ Go through the entire CRUD - Create, Read, Update and Delete
 
 Send and retrieve infor from a database
 
-The endpoints would be 
+#### Endpoints
 
 - Sign up (Create an account)
 
 - Sign in/log in
 
 - Set up a recurring payment
+
+- View payment information for an authenticated user
+
+
 
 
 http://127.0.0.1:8000/
@@ -61,3 +81,21 @@ Sign in - retrieve data from the database
 
 - Users table?
 
+## Authentication
+
+Sign in
+
+#### Searching
+
+- Search for a particular type of payment, or particular vendor or expense type
+
+
+
+#### Filtering
+
+- Filter payments by date/period/amount for an authenticated user
+
+
+#### Sorting
+
+- Sort search or filtering results by ascending or descending order or alphabetically (and/or)
