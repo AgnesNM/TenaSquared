@@ -35,8 +35,6 @@ Send and retrieve infor from a database
 - View payment information for an authenticated user
 
 
-
-
 http://127.0.0.1:8000/
 
 ##### Sign up

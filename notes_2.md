@@ -12,6 +12,7 @@ from django.core import serializers
 
 serializers.serialize("json", Customer.objects.all())
 
+
 # Using a serializer object directly
 
 json_serializer = serializers.get_serializer("json")

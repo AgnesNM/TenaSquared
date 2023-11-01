@@ -31,14 +31,16 @@ def customers(request):
 
     else:
 
+        # return HttpResponse(data, content_type="application/json")
+
         return JsonResponse(json.loads(data), safe=False)
         
 
-def sign_in(request, customer_id):
+def one_customer(request, customer_id):
     
     try:
 
-        # Use get_object_or_404 to retrieve the book or return 404 if not found
+        # Use get_object_or_404 to retrieve the customer or return 404 if not found
 
         customer = get_object_or_404(Customer, pk=customer_id)
       
@@ -57,6 +59,7 @@ def sign_in(request, customer_id):
            
         return JsonResponse(data)
     
+
 @csrf_exempt ## To exempt from default requirement for CSRF tokens to use postman
 def sign_up(request):
     

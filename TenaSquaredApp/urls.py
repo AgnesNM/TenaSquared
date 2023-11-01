@@ -7,6 +7,6 @@ app_name = "TenaSquaredApp"
 urlpatterns = [
     path("", views.index, name = "index"),   
     path("customers/", views.customers, name = "customers"),  
-    path("customers/sign_in/<int:customer_id>/", views.sign_in, name = "sign_in"),   
+    path("customers/one_customer/<int:customer_id>/", views.one_customer, name = "one_customer"),   
     path("customers/sign_up/", views.sign_up, name = "sign_up"),
 ]
